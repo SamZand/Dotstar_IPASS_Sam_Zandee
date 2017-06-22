@@ -1,0 +1,195 @@
+\hypertarget{class_l_e_dstrip}{}\section{L\+E\+Dstrip Class Reference}
+\label{class_l_e_dstrip}\index{L\+E\+Dstrip@{L\+E\+Dstrip}}
+
+
+The ledstrip class.  
+
+
+
+
+{\ttfamily \#include $<$ledstrip.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_e_dstrip_ab61e240ec69725f220ff443fd0296d42}{L\+E\+Dstrip} (hwlib\+::target\+::pins clock, hwlib\+::target\+::pins data)
+\begin{DoxyCompactList}\small\item\em pin select \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_a29a03486eed0eeb722908d9145c22003}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clears al the L\+E\+Ds. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_a026a5cfb93b103b23764b1eaa957fe3c}{show} ()
+\begin{DoxyCompactList}\small\item\em Sets all the led. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_aa8703c4d75730b7ca47f3a97c722973a}{set\+All\+Brightness} (uint8\+\_\+t brightness)
+\begin{DoxyCompactList}\small\item\em Sets all the L\+E\+Ds to the given brightness value between 0 and 31. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_a42a90dcca3baf0e2a6e208129761f1b9}{set\+All\+Color} (uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Sets all the L\+E\+Ds to the given color. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_abccaa5762ec0a8cc6ff1de17d709cf96}{set\+Color} (uint32\+\_\+t posled, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Sets a color on a given position. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_a75c168fb81979cfa453f8fa5f758bfac}{set\+Brightness} (uint32\+\_\+t posled, uint8\+\_\+t brightness)
+\begin{DoxyCompactList}\small\item\em Sets brightness on a given position. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_af18580ebff4512a764f968771f87bcb6}{Move\+Colors\+Up} ()
+\begin{DoxyCompactList}\small\item\em Moves all the led one position. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_af55f0cd37fa12d3c06c1c3b6097760f8}{rainbow} ()
+\begin{DoxyCompactList}\small\item\em Makes a rainbow. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_a586a43486166d3f867d50fc4e8c549ca}{disco} ()
+\begin{DoxyCompactList}\small\item\em Makes a Disco. \end{DoxyCompactList}\item 
+void \hyperlink{class_l_e_dstrip_a21a402a28f249ad5eba81712d3498af6}{snake} (int speed, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Makes a snake. \end{DoxyCompactList}\item 
+\hyperlink{struct_color}{Color} \hyperlink{class_l_e_dstrip_ab72d203e4a58842eb6fb985145895312}{get\+Color} (uint32\+\_\+t posled)
+\begin{DoxyCompactList}\small\item\em gets the color of a position \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The ledstrip class. 
+
+This is the base class for the ledstrip library. This class defines all the base charachteristics of a ledstrip. All the \hyperlink{class_l_e_dstrip}{L\+E\+Dstrip} functions are declared and defined in this class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_l_e_dstrip_ab61e240ec69725f220ff443fd0296d42}\label{class_l_e_dstrip_ab61e240ec69725f220ff443fd0296d42}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{L\+E\+Dstrip()}{LEDstrip()}}
+{\footnotesize\ttfamily L\+E\+Dstrip\+::\+L\+E\+Dstrip (\begin{DoxyParamCaption}\item[{hwlib\+::target\+::pins}]{clock,  }\item[{hwlib\+::target\+::pins}]{data }\end{DoxyParamCaption})}
+
+
+
+pin select 
+
+Here we use the hwlib to target the output pins 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_l_e_dstrip_a29a03486eed0eeb722908d9145c22003}\label{class_l_e_dstrip_a29a03486eed0eeb722908d9145c22003}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!clear@{clear}}
+\index{clear@{clear}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears al the L\+E\+Ds. 
+
+This function sets al the leds to 0.
+
+The clear function sets all the L\+ED to off. \mbox{\Hypertarget{class_l_e_dstrip_a586a43486166d3f867d50fc4e8c549ca}\label{class_l_e_dstrip_a586a43486166d3f867d50fc4e8c549ca}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!disco@{disco}}
+\index{disco@{disco}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{disco()}{disco()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::disco (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Makes a Disco. 
+
+Makes a disco.
+
+This function makes a rainbow of 6 colors. \mbox{\Hypertarget{class_l_e_dstrip_ab72d203e4a58842eb6fb985145895312}\label{class_l_e_dstrip_ab72d203e4a58842eb6fb985145895312}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily \hyperlink{struct_color}{Color} L\+E\+Dstrip\+::get\+Color (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{posled }\end{DoxyParamCaption})}
+
+
+
+gets the color of a position 
+
+gets the color out the array
+
+This function returns a struct color of a position \mbox{\Hypertarget{class_l_e_dstrip_af18580ebff4512a764f968771f87bcb6}\label{class_l_e_dstrip_af18580ebff4512a764f968771f87bcb6}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!Move\+Colors\+Up@{Move\+Colors\+Up}}
+\index{Move\+Colors\+Up@{Move\+Colors\+Up}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{Move\+Colors\+Up()}{MoveColorsUp()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::\+Move\+Colors\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves all the led one position. 
+
+Moves all leds a position up.
+
+The current position of all the L\+E\+Ds is + 1 \mbox{\Hypertarget{class_l_e_dstrip_af55f0cd37fa12d3c06c1c3b6097760f8}\label{class_l_e_dstrip_af55f0cd37fa12d3c06c1c3b6097760f8}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!rainbow@{rainbow}}
+\index{rainbow@{rainbow}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{rainbow()}{rainbow()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::rainbow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Makes a rainbow. 
+
+This function makes a rainbow of 3 color. \mbox{\Hypertarget{class_l_e_dstrip_aa8703c4d75730b7ca47f3a97c722973a}\label{class_l_e_dstrip_aa8703c4d75730b7ca47f3a97c722973a}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!set\+All\+Brightness@{set\+All\+Brightness}}
+\index{set\+All\+Brightness@{set\+All\+Brightness}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{set\+All\+Brightness()}{setAllBrightness()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::set\+All\+Brightness (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{brightness }\end{DoxyParamCaption})}
+
+
+
+Sets all the L\+E\+Ds to the given brightness value between 0 and 31. 
+
+This function sets all the led to a given brightness.
+
+To turn on all the L\+ED brightness you have to call this function and give a value between 0 and 31. \mbox{\Hypertarget{class_l_e_dstrip_a42a90dcca3baf0e2a6e208129761f1b9}\label{class_l_e_dstrip_a42a90dcca3baf0e2a6e208129761f1b9}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!set\+All\+Color@{set\+All\+Color}}
+\index{set\+All\+Color@{set\+All\+Color}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{set\+All\+Color()}{setAllColor()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::set\+All\+Color (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets all the L\+E\+Ds to the given color. 
+
+This function sets all the led to a given color.
+
+This \hyperlink{class_l_e_dstrip}{L\+E\+Dstrip} works with Red, Green and blue. If you want all the L\+E\+Ds to one collor you call Set\+All\+Color. \mbox{\Hypertarget{class_l_e_dstrip_a75c168fb81979cfa453f8fa5f758bfac}\label{class_l_e_dstrip_a75c168fb81979cfa453f8fa5f758bfac}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!set\+Brightness@{set\+Brightness}}
+\index{set\+Brightness@{set\+Brightness}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{set\+Brightness()}{setBrightness()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::set\+Brightness (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{posled,  }\item[{uint8\+\_\+t}]{brightness }\end{DoxyParamCaption})}
+
+
+
+Sets brightness on a given position. 
+
+This function sets a given brightness to a given position on the ledstrip.
+
+Here you can set position x on a given brightness \mbox{\Hypertarget{class_l_e_dstrip_abccaa5762ec0a8cc6ff1de17d709cf96}\label{class_l_e_dstrip_abccaa5762ec0a8cc6ff1de17d709cf96}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::set\+Color (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{posled,  }\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets a color on a given position. 
+
+This function sets a given color to a given position on the ledstrip.
+
+Here you can set position x on a given color. \mbox{\Hypertarget{class_l_e_dstrip_a026a5cfb93b103b23764b1eaa957fe3c}\label{class_l_e_dstrip_a026a5cfb93b103b23764b1eaa957fe3c}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!show@{show}}
+\index{show@{show}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets all the led. 
+
+This functions sends the array with all the info to the strip.
+
+The array with all the led info wil loop through the function. Depending if there is a 1 or 0 the Send\+Byte en Send\+Bit function will be called. Nothing will happen aslong you do not call the show function. At first the sendstart function will be called. After the start de array will be call. At the end the endframe will be called. Four end-\/frame bytes are seemingly indistinguishable from a white pixel, and empirical testing suggests it can be left out...but it\textquotesingle{}s always a good idea to follow the datasheet. \mbox{\Hypertarget{class_l_e_dstrip_a21a402a28f249ad5eba81712d3498af6}\label{class_l_e_dstrip_a21a402a28f249ad5eba81712d3498af6}} 
+\index{L\+E\+Dstrip@{L\+E\+Dstrip}!snake@{snake}}
+\index{snake@{snake}!L\+E\+Dstrip@{L\+E\+Dstrip}}
+\subsubsection{\texorpdfstring{snake()}{snake()}}
+{\footnotesize\ttfamily void L\+E\+Dstrip\+::snake (\begin{DoxyParamCaption}\item[{int}]{speed,  }\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Makes a snake. 
+
+A snake through the ledstrip.
+
+Makes a snake through the strip at a given speed en color. Where speed 1 the fastest is. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ledstrip_8hpp}{ledstrip.\+hpp}\item 
+ledstrip.\+cpp\end{DoxyCompactItemize}
